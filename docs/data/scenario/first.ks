@@ -21,7 +21,7 @@
 
 [link target=*tag_sleep] →部屋を調べる [endlink][r]
 [link target=*tag_run] →扉を開ける [endlink][r]
-[wait time=5000]
+[wait time=10000]
 [quake count=3 time=300]
 [cm]
 
@@ -35,10 +35,9 @@
 [wait_cancel]
 [cm]
 
-[bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+本棚を見てみたが、特に役立ちそうなものはなかった。[l][r]
+ベッドの下を覗いてみると、鍵が落ちていた。[r]
 [eval exp="f.key=1"]
 【 -】[l][cm]
 
@@ -46,21 +45,18 @@
 
 *tag_run
 [wait_cancel]
-[bg storage=run.jpg time=500]
 
 [cm]
 [if exp="f.key"]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+鍵を使って扉を開けることができた。[l][r]
+扉を開け、ふと気づくとあなたは自分の見慣れた部屋の中にいた。[r]
 
 【 GOOD END 】[l][cm]
 [clearvar]
 [jump target=*in]
-a[l][cm]
-[jump target=*start]
 
 [else]
-a[l][cm]
+扉を開けようとしたが、しかし鍵がかかっていた。[l][cm]
 [jump target=*start]
 
 [endif]
