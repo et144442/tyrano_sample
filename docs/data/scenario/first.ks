@@ -29,7 +29,7 @@
 壁にひびが入り、天井が落ちてくる。あなたにはもうどうすることもできない。[l][r]
 【 BAD END 】[l][cm]
 
-[jump target=*start]
+[jump target=*in]
 
 *tag_sleep
 [wait_cancel]
